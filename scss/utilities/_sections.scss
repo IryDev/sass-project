@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+.dogs, .example{
+    padding: 3rem 0;
+}
+
+.section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    h2{
+        text-transform: capitalize;
+    }
+
+    &__actions button{
+        border: 1px solid $dark-blue;
+        padding: 0.7rem 1.5rem;
+        border-radius: 50px;
+        color: $dark-blue;
+        background-color: transparent;
+        @include flex-center;
+        gap: 10px;
+
+        img{
+            width: 7px;
+        }
+    }
+}

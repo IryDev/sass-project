@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+.cta {
+  height: 400px;
+  width: 100%;
+  border-radius: 30px;
+  background: $gradient-beige;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 4rem;
+  padding-left: 0;
+  padding-bottom: 0;
+
+  &__content {
+    text-align: right;
+
+    h2 {
+      font-size: 3.5rem;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+    }
+    h3 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      text-transform: capitalize;
+    }
+
+    &__buttons button {
+      background-color: $dark-blue;
+      padding: 0.7rem 3rem;
+      border-radius: 50px;
+      color: white;
+      font-weight: 700;
+      text-transform: uppercase;
+      border: none;
+    }
+  }
+}

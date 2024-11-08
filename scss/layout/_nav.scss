@@ -1,0 +1,49 @@
+@use "../abstracts/" as *;
+
+.nav {
+  @include flex-center-between;
+
+  &__logo img {
+    width: 150px;
+  }
+
+  &__menu ul {
+    display: flex;
+    gap: 3rem;
+    font-weight: 700;
+  }
+
+  &__actions {
+    display: flex;
+    gap: 20px;
+
+    a {
+      background-color: $dark-blue;
+      padding: 0.7rem 3rem;
+      border-radius: 50px;
+      color: white;
+    }
+  }
+}
+
+.nav__actions__searchbar {
+  width: 300px;
+  padding: 0.7rem 1rem;
+  border-radius: 50px;
+  border: 1px solid white;
+  background: white;
+  gap: 10px;
+  @include flex-center-between;
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .nav__menu {
+    display: none;
+  }
+}

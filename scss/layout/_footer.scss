@@ -1,0 +1,69 @@
+@use "../abstracts" as *;
+
+.footer {
+  padding: 4rem 6rem;
+  background: $gradient-beige;
+
+  &__nav{
+    @include flex-center-between;
+    gap: 20px;
+    margin: 3rem 0;
+    font-weight: normal;
+
+    &__icons{
+        @include flex-center-between;
+        gap: 20px;
+
+        img{
+            width: 25px;
+        }
+    }
+  }
+
+  &__copy{
+    @include flex-center-between;
+    gap: 20px;
+    font-weight: normal;
+
+    div{
+        @include flex-center-between;
+        gap: 20px;
+    }
+  }
+}
+
+.contact {
+  background-color: $dark-blue;
+  border-radius: 10px;
+  padding: 3rem;
+  @include flex-center-between;
+
+  h3 {
+    color: white;
+  }
+
+  &__box {
+    width: 100%;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 10px;
+    @include flex-center-between;
+    gap: 10px;
+
+    input {
+      width: 100%;
+      padding: 1rem;
+      border: 1px solid $dark-blue;
+      border-radius: 5px;
+    }
+
+    button {
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 5px;
+      background-color: $dark-blue;
+      color: white;
+      line-break: loose;
+    }
+  }
+}
