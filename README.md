@@ -1,6 +1,6 @@
 <div align="center">
 <div>
-<img src="https://www.designstudiouiux.com/_gatsby/file/687faf930d5453c2860ffbc4d5dcd733/Para-image-83.jpg?u=https%3A%2F%2Fdesign-studio.wordpress-studio.io%2Fwp-content%2Fuploads%2F2024%2F05%2FPara-image-83.jpg">
+<img src="./assets/images/Cover.png">
 </div>
 </div>
 
